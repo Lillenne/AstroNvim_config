@@ -18,7 +18,8 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "carbonfox",
+  -- colorscheme = "carbonfox",
+  colorscheme = "kanagawa",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -65,6 +66,7 @@ return {
     },
   },
 
+
   -- This function is run last and is a good place to configuring
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
@@ -81,5 +83,19 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+
+    -- TODO path error when configuring keybinds this way
+    -- local rt = require("rust-tools")
+    --   rt.setup({
+    --     server = {
+    --       on_attach = function(_, bufnr)
+    --         -- Hover actions
+    --         vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+    --         -- Code action groups
+    --         vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    --       end,
+    --     },
+    --   })
+
   end,
 }
