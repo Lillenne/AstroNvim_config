@@ -6,11 +6,14 @@ return {
 
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.media.drop-nvim" },
-  { import = "astrocommunity.colorscheme.nightfox" },
-  { import = "astrocommunity.colorscheme.onedarkpro" },
-  { import = "astrocommunity.colorscheme.vscode" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine" },
-  { import = "astrocommunity.colorscheme.kanagawa" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   -- { import = "astrocommunity.completion.copilot-lua-cmp" },
 }
