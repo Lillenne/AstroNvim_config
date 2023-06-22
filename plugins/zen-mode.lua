@@ -1,8 +1,18 @@
 return {
   "folke/zen-mode.nvim",
-  lazy = false,
-  keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen mode"} }
-  -- config = function()
-  --   require("zen-mode").setup()
-  -- end,
+  keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen mode"} },
+  config = function()
+    require("zen-mode").setup({
+        window = {
+            width = .45,
+        },
+        alacritty = {
+          enabled = true,
+          font = "+4", -- font size
+        },
+        tmux = {
+            enabled = false
+        },
+    })
+  end,
 }

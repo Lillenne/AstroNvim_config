@@ -11,7 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -20,9 +22,15 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>tdi"] = { ":normal! i TODO: <CR>i ", desc = "Add TODO" },
+    ["<leader>o"] = { ":Neotree toggle reveal<CR>", desc = "Toggle NeoTree" }, -- add toggle flag to default neotree keymap
+    ["<leader>fd"] = { ":Telescope file_browser<CR>", desc = "Find Dirs" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    ["<C-g>"] = { "TODO: ", desc = "Add TODO" },
   },
 }

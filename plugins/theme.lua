@@ -18,9 +18,9 @@ return {
     name = "nightfox",
     -- carbonfox is nice!
   },
-  {
-      "catppuccin/nvim",
-      name = "catppuccin"
-  },
+  -- {
+  --     "catppuccin/nvim",
+  --     name = "catppuccin"
+  -- },
   
 }

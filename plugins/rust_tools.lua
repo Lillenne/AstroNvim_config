@@ -2,7 +2,7 @@ if true then
   return {}
 end
 
--- TODO address debugger path issues 
+-- TODO address debugger path issues  -- currrently using astronvim community rust pack
 
   -- return {
   --   "neovim/nvim-lspconfig",
