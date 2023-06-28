@@ -23,7 +23,8 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>tdi"] = { ":normal! i TODO: <CR>i ", desc = "Add TODO" },
-    ["<leader>o"] = { ":Neotree toggle reveal<CR>", desc = "Toggle NeoTree" }, -- add toggle flag to default neotree keymap
+    ["<leader>o"] = false,
+    ["<leader>op"] = { ":Neotree focus reveal<CR>", desc = "Toggle NeoTree" }, -- add toggle flag to default neotree keymap
     ["<leader>fd"] = { ":Telescope file_browser<CR>", desc = "Find Dirs" },
   },
   t = {

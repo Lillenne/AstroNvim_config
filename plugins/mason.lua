@@ -7,8 +7,8 @@ return {
     opts = {
       ensure_installed = {
         "lua_ls",
-        "csharp_ls",
-        -- "omnisharp", -- currently disabled due to issues with omnisharp
+        -- "csharp_ls",
+        "omnisharp", -- currently disabled due to issues with omnisharp
         "cssls",
         "dockerls",
         "fsautocomplete",
