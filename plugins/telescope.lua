@@ -3,7 +3,6 @@ return {
   dependencies = { -- add a new dependency to telescope that is our new plugin
     "nvim-telescope/telescope-file-browser.nvim",
     "nvim-telescope/telescope-media-files.nvim",
-    -- "dharmx/telescope-media.nvim",
   },
   -- the first parameter is the plugin specification
   -- the second is the table of options as set up in Lazy with the `opts` key
@@ -22,20 +21,6 @@ return {
       },
     }
 
-    -- dharmx fork opts
-    -- local media = {
-    --   extensions = {
-    --     media = {
-    --       backend = "viu", -- image/gif backend
-    --       backend_options = {
-    --         viu = {
-    --           move = true, -- GIF preview
-    --         },
-    --       },
-    --     },
-    --   },
-    -- }
-
     -- merge options
     local tbl = require("astronvim.utils").extend_tbl(opts, media)
 
@@ -45,9 +30,6 @@ return {
     local telescope = require "telescope"
     telescope.setup(tbl)
     telescope.load_extension "file_browser"
-    -- orig
     telescope.load_extension "media_files"
-    -- dharmx
-    -- telescope.load_extension "media"
   end,
 }

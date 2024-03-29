@@ -24,14 +24,21 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>tdi"] = { ":normal! i TODO: <CR>i ", desc = "Add TODO" },
     ["<leader>o"] = false,
-    ["<leader>op"] = { ":Neotree focus reveal<CR>", desc = "Toggle NeoTree" }, -- add toggle flag to default neotree keymap
     ["<leader>fd"] = { ":Telescope file_browser<CR>", desc = "Find Dirs" },
+    ["<leader>."] = { ":Telescope file_browser<CR>", desc = "Find Dirs" },
+    ["<leader>,"] = { ":Telescope buffers<CR>", desc = "Find Dirs" },
+    ["<leader>pp"] = { ":Telescope projects<CR>", desc = "Find Dirs" },
+    ["<leader>le"] = { ":Telescope diagnostics<CR>", desc = "Find Diagnostics" },
+    ["<leader>f."] = { ":Telescope current_buffer_fuzzy_find<CR>", desc = "Find in Buffer" },
+    ["<leader><Space>"] = { ":Telescope live_grep<CR>", desc = "Search Words" },
+    ["<C-x>"] = { ":x<CR>", desc = "Save & Exit" },
+    ["<leader>gg"] = { ":Neogit<CR>", desc = "Git" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
   },
   i = {
-    ["<C-g>"] = { "TODO: ", desc = "Add TODO" },
+    ["<C-x>"] = { "<ESC>:x<CR>", desc = "Save & Exit" },
   },
 }
