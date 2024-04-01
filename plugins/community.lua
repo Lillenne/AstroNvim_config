@@ -1,5 +1,6 @@
 return {
   "AstroNvim/astrocommunity",
+  -- { import = "astrocommunity.motion.mini-move" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.lua" },
@@ -28,6 +29,12 @@ return {
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.lsp.inc-rename-nvim" },
   { import = "astrocommunity.media.image-nvim" },
+  {
+    "3rd/image.nvim",
+    opts = {
+      backend = "ueberzug",
+    },
+  },
   -- ImageMagick - mandatory
   -- magick LuaRock - mandatory (luarocks --local --lua-version=5.1 install magick)
   -- Magick LuaRock requires Lua 5.1

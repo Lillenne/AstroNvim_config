@@ -8,7 +8,7 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
-    ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
+    -- ["<leader>bN"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
         require("astronvim.utils.status").heirline.buffer_picker(
@@ -24,7 +24,6 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>tdi"] = { ":normal! i TODO: <CR>i ", desc = "Add TODO" },
     ["<leader>o"] = false,
-    ["<leader>fd"] = { ":Telescope file_browser<CR>", desc = "Find Dirs" },
     ["<leader>."] = { ":Telescope file_browser<CR>", desc = "Find Dirs" },
     ["<leader>,"] = { ":Telescope buffers<CR>", desc = "Find Dirs" },
     ["<leader>pp"] = { ":Telescope projects<CR>", desc = "Find Dirs" },
@@ -33,6 +32,7 @@ return {
     ["<leader><Space>"] = { ":Telescope live_grep<CR>", desc = "Search Words" },
     ["<C-x>"] = { ":x<CR>", desc = "Save & Exit" },
     ["<leader>gg"] = { ":Neogit<CR>", desc = "Git" },
+    ["<leader>ot"] = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", desc = "ToggleTerm horizontal split" },
   },
   t = {
     -- setting a mapping to false will disable it
